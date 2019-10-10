@@ -6,7 +6,7 @@ using System.IO;
 using System.Net;
 using System.Text;
 
-namespace LeadsBlack
+namespace API_Samples
 {
     public enum RequestResult : byte
     {
