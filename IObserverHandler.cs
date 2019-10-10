@@ -1,7 +1,7 @@
 using System;
 using System.Data.SqlClient;
 
-namespace LeadsBlack
+namespace API_Samples
 {
     public interface IObserverHandler
     {
