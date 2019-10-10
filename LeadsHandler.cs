@@ -82,7 +82,7 @@ namespace LeadsBlack
                                 _logger.LogInformation($"Postback sent=>type:new      ,some info");
                                 if (statnew == RequestResult.Success && lead.status != "pending")
                                 {
-                                    postback = $"{PostBackUrl}&adv_sub={lead.leadid}&status={lead.status}&comment={lead.comment}";
+                                    postback = $"{PostBackUrl}&some_postback_parameters";
                                     var statupdatenew = Common.SendPostBack(postback, out result);
                                     _logger.LogInformation($"Postback sent=>type:newupdate,some info");
                                 }
@@ -99,7 +99,7 @@ namespace LeadsBlack
                             }
                             else if (lead.status != lead.prevstat)
                             {
-                                postback = $"{PostBackUrl}&adv_sub={lead.leadid}&status={lead.status}&comment={lead.comment}";
+                                postback = $"{PostBackUrl}&some_postback_parameters";
                                 var statupdate = Common.SendPostBack(postback, out result);
                                 _logger.LogInformation($"Postback sent=>type:   update,some info");
                                 if (statupdate == RequestResult.Success)
