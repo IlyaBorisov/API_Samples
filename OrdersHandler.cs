@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LeadsBlack
+namespace API_Samples
 {
     public class OrdersHandler : IObserverHandler
     {
