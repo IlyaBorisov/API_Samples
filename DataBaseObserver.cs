@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace LeadsBlack
+namespace API_Samples
 {
     public sealed class DatabaseObserver<T> : IHostedService, IDisposable where T : IObserverHandler
     {
