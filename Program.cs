@@ -5,7 +5,7 @@ using NLog.Extensions.Logging;
 using NLog;
 using System;
 
-namespace LeadsBlack
+namespace API_Samples
 {
     class Program
     {
